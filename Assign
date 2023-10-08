@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Survey</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coding Survey</h1>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="coding-experience">Coding Experience (in years):</label>
+            <input type="number" id="coding-experience" name="coding-experience" min="0" required>
+
+            <label for="favorite-language">Favorite Coding Language:</label>
+            <select id="favorite-language" name="favorite-language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label>Favorite Coding Project:</label>
+            <textarea id="favorite-project" name="favorite-project" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
