@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Enthusiast Survey</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coding Enthusiast Survey</h1>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Favorite Coding Language:</label>
+            <select id="coding-language" name="coding-language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label>How many hours do you code per week?</label>
+            <input type="number" id="coding-hours" name="coding-hours" min="1" required>
+
+            <label>Favorite coding project you've worked on:</label>
+            <textarea id="favorite-project" name="favorite-project" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
